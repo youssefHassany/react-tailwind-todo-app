@@ -3,12 +3,6 @@ import TodoList from "./list/TodoList";
 import { useState } from "react";
 
 function App() {
-  // const dataObj = {
-  //   id: Date.now(),
-  //   title: "",
-  //   done: false,
-  // };
-
   const [data, setData] = useState(
     JSON.parse(localStorage.getItem("todos")) || []
   );
